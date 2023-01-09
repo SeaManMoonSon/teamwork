@@ -10,10 +10,11 @@
 <body>
     <h1>Hej hej vänner</h1>
     <p> testar siljes branch</p>
-    <form action="#">
+    <div id="task-wrapper"></div>
+    <form action="#" id="todoForm">
         <h3>Add Todo</h3>
         
-        <input type="text">
+        <input type="text" id="title">
 
         <label for="highPriority">High Priority</label>
         <input type="radio" name="Priority" id="highPriority">
@@ -21,8 +22,9 @@
         <label for="lowPriority">Low Priority</label>
         <input type="radio" name="Priority" id="lowPriority">
 
-        <input type="submit" value="Add">
+    <button onclick="addItem()">Add</button>
     </form>
 
 </body>
+<script src="script.js"></script>
 </html>
